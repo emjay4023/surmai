@@ -37,7 +37,7 @@ func init() {
 			},
 			&core.DateField{
 				Name:     "startDate",
-				Required: true,
+				Required: false,
 			},
 
 			&core.JSONField{

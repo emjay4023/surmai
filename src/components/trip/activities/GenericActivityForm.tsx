@@ -154,7 +154,6 @@ export const GenericActivityForm = ({
             label={t('activity_start_date', 'Start Date')}
             description={t('activity_start_date_desc', 'Activity start date and time')}
             clearable
-            required
             defaultDate={trip.startDate}
             minDate={trip.startDate}
             maxDate={trip.endDate}
@@ -177,7 +176,7 @@ export const GenericActivityForm = ({
             label={t('activity_end_date', 'End Date')}
             description={t('activity_end_date_desc', 'Activity end date and time')}
             clearable
-            required
+            defaultDate={trip.endDate}
             minDate={trip.startDate}
             maxDate={trip.endDate}
             key={form.key('endDate')}
